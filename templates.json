@@ -13,7 +13,7 @@
       "platform": "linux",
       "repository": {
         "url": "https://github.com/socheatsok78/portainer-marketplace",
-        "stackfile": "containers/pangolin-cli/compose.yml"
+        "stackfile": "templates/pangolin-cli/compose.yml"
       },
       "env": [
         {
