@@ -1,5 +1,6 @@
 {
     "type": 3,
+    "administrator_only": true,
     "title": "Pangolin Site",
     "name": "pangolin-site",
     "description": "Pangolin Site for Portainer",
