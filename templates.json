@@ -2,6 +2,51 @@
   "version": "3",
   "templates": [
     {
+      "type": 3,
+      "title": "Pangolin CLI",
+      "name": "pangolin-site",
+      "description": "Pangolin CLI for Portainer",
+      "categories": [
+        "edge"
+      ],
+      "platform": "linux",
+      "image": "fosrl/pangolin-cli",
+      "repository": {
+        "url": "https://github.com/socheatsok78/portainer-marketplace",
+        "stackfile": "containers/pangolin-cli/compose.yml"
+      },
+      "env": [
+        {
+          "name": "PANGOLIN_ENDPOINT",
+          "label": "Endpoint",
+          "default": "https://pangolin.fossorial.io"
+        },
+        {
+          "name": "SITE_ID",
+          "label": "Site ID"
+        },
+        {
+          "name": "SITE_SECRET",
+          "label": "Site Secret"
+        },
+        {
+          "name": "DISABLE_CLIENTS",
+          "label": "Client Connections",
+          "select": [
+            {
+              "text": "Accept Client Connections",
+              "value": "false",
+              "default": true
+            },
+            {
+              "text": "Disable Client Connections",
+              "value": "true"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": 10,
       "type": 1,
       "title": "PostgreSQL",
