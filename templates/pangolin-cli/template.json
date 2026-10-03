@@ -7,7 +7,6 @@
         "edge"
     ],
     "platform": "linux",
-    "image": "fosrl/pangolin-cli",
     "repository": {
         "url": "https://github.com/socheatsok78/portainer-marketplace",
         "stackfile": "containers/pangolin-cli/compose.yml"
