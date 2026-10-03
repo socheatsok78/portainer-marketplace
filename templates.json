@@ -3,9 +3,9 @@
   "templates": [
     {
       "type": 3,
-      "title": "Pangolin CLI",
+      "title": "Pangolin Site",
       "name": "pangolin-site",
-      "description": "Pangolin CLI for Portainer",
+      "description": "Pangolin Site for Portainer",
       "categories": [
         "edge"
       ],
@@ -13,7 +13,7 @@
       "platform": "linux",
       "repository": {
         "url": "https://github.com/socheatsok78/portainer-marketplace",
-        "stackfile": "templates/pangolin-cli/compose.yml"
+        "stackfile": "templates/pangolin-site/compose.yml"
       },
       "env": [
         {
