@@ -6,6 +6,7 @@
     "categories": [
         "edge"
     ],
+    "logo": "https://docs.pangolin.net/icon0.svg",
     "platform": "linux",
     "repository": {
         "url": "https://github.com/socheatsok78/portainer-marketplace",
