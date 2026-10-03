@@ -56,7 +56,7 @@
         "database"
       ],
       "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/postgres.png",
+      "logo": "https://www.postgresql.org/media/img/about/press/elephant.png",
       "image": "postgres:latest",
       "env": [
         {
