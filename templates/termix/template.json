@@ -1,0 +1,28 @@
+{
+    "type": 3,
+    "administrator_only": true,
+    "title": "Termix",
+    "name": "termix",
+    "description": "Self-hosted SSH and remote desktop management.",
+    "categories": [
+        "management"
+    ],
+    "logo": "https://termix.site/img/logo.svg",
+    "platform": "linux",
+    "repository": {
+        "url": "https://github.com/socheatsok78/portainer-marketplace",
+        "stackfile": "templates/termix/compose.yml"
+    },
+    "env": [
+        {
+            "name": "COMPOSE_PORT_TERMIX",
+            "label": "Termix port",
+            "default": "127.0.0.1:2280"
+        },
+        {
+            "name": "COMPOSE_PORT_GUACD",
+            "label": "Guacamole port",
+            "default": "127.0.0.1:4822"
+        }
+    ]
+}
