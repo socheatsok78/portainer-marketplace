@@ -94,7 +94,7 @@
         "docker"
       ],
       "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
+      "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/registry/logo.png",
       "image": "registry:latest",
       "ports": [
         "5000/tcp"
@@ -121,7 +121,7 @@
         "docker"
       ],
       "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
+      "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/registry/logo.png",
       "image": "registry:latest",
       "ports": [
         "5000/tcp"
