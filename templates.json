@@ -11,11 +11,11 @@
         "infrastructure",
         "networking"
       ],
-      "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/netbird/logo.svg",
+      "logo": "https://socheatsok78.github.io/portainer-marketplace/netbird-self-hosted/netbird/logo.svg",
       "platform": "linux",
       "repository": {
         "url": "https://github.com/socheatsok78/portainer-marketplace",
-        "stackfile": "templates/netbird/compose.yml"
+        "stackfile": "netbird-self-hosted/netbird/compose.yml"
       },
       "env": [
         {
