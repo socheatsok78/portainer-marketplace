@@ -1,0 +1,14 @@
+services:
+  traefik:
+    image: "${COMPOSE_IMAGE_TRAEFIK:-traefik:latest}"
+    command:
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedByDefault=false"
+      - "--entrypoints.web.address=:80"
+    ports:
+      - "${COMPOSE_PORT_HTTP:-80}:80"
+      - "${COMPOSE_PORT_HTTPS:-443}:443"
+      - "${COMPOSE_PORT_TRAEFIK:-127.0.0.1:8080}:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro

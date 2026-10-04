@@ -247,6 +247,46 @@
     },
     {
       "type": 3,
+      "administrator_only": true,
+      "title": "Traefik",
+      "name": "traefik",
+      "description": "A modern reverse proxy and load balancer for HTTP and TCP services.",
+      "categories": [
+        "load-balancer",
+        "networking",
+        "proxy"
+      ],
+      "logo": "https://doc.traefik.io/traefik/assets/img/traefik.logo.png",
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/socheatsok78/portainer-marketplace",
+        "stackfile": "templates/traefik/compose.yml"
+      },
+      "env": [
+        {
+          "name": "COMPOSE_IMAGE_TRAEFIK",
+          "label": "Traefik Image",
+          "default": "traefik:latest"
+        },
+        {
+          "name": "COMPOSE_PORT_HTTP",
+          "label": "HTTP Port",
+          "default": "80"
+        },
+        {
+          "name": "COMPOSE_PORT_HTTPS",
+          "label": "HTTPS Port",
+          "default": "443"
+        },
+        {
+          "name": "COMPOSE_PORT_TRAEFIK",
+          "label": "Traefik port",
+          "default": "127.0.0.1:8080"
+        }
+      ]
+    },
+    {
+      "type": 3,
       "title": "UpSnap",
       "name": "upsnap",
       "description": "A simple wake on lan web app written with SvelteKit, Go and PocketBase.",
