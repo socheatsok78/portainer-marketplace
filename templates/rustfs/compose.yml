@@ -23,8 +23,8 @@ services:
     security_opt:
       - "no-new-privileges:true"
     ports:
-      - "${X_RUSTFS_S3_API_PORT:-9000}:9000" # S3 API port
-      - "${X_RUSTFS_CONSOLE_PORT:-9001}:9001" # Console port
+      - "${COMPOSE_PORT_S3_API:-9000}:9000" # S3 API port
+      - "${COMPOSE_PORT_CONSOLE:-9001}:9001" # Console port
     environment:
       - RUSTFS_VOLUMES=/data/rustfs0
       - RUSTFS_ADDRESS=0.0.0.0:9000

@@ -102,12 +102,12 @@
       },
       "env": [
         {
-          "name": "X_RUSTFS_S3_API_PORT",
+          "name": "COMPOSE_PORT_S3_API",
           "label": "S3 API port",
           "default": "9000"
         },
         {
-          "name": "X_RUSTFS_CONSOLE_PORT",
+          "name": "COMPOSE_PORT_CONSOLE",
           "label": "Console port",
           "default": "9001"
         },
