@@ -1,32 +1,39 @@
 {
     "type": 3,
     "administrator_only": true,
-    "title": "NetBird",
+    "title": "NetBird Self-Hosted",
     "name": "netbird",
-    "description": "NetBird for Portainer",
+    "description": "NetBird is an Open Source Zero Trust Networking platform that allows you to create secure private networks for your organization or home.",
     "categories": [
-        "edge"
+        "infrastructure",
+        "networking"
     ],
-    "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/netbird-self-hosted/logo.svg",
+    "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/netbird/logo.svg",
     "platform": "linux",
     "repository": {
         "url": "https://github.com/socheatsok78/portainer-marketplace",
-        "stackfile": "templates/netbird/compose.yml"
+        "stackfile": "netbird/netbird/compose.yml"
     },
     "env": [
         {
-            "name": "NB_HOSTNAME",
-            "label": "NetBird Hostname",
-            "default": ""
+            "name": "NB_PROXY_DOMAIN",
+            "label": "NetBird FQDN domain",
+            "default": "netbird.example.com"
         },
         {
-            "name": "NB_SETUP_KEY",
-            "label": "NetBird Setup Key"
+            "name": "NB_AUTH_SECRET",
+            "label": "NetBird Auth Secret",
+            "default": "$ openssl rand -base64 32 | sed 's/=//g'"
         },
         {
-            "name": "NB_MANAGEMENT_URL",
-            "label": "NetBird Management URL",
-            "default": "https://api.netbird.io:443"
+            "name": "NB_SESSION_ENCRYPTION_KEY",
+            "label": "NetBird Session Encryption Key",
+            "default": "$ openssl rand -base64 32"
+        },
+        {
+            "name": "NB_STORE_ENCRYPTION_KEY",
+            "label": "NetBird Store Encryption Key",
+            "default": "$ openssl rand -base64 32"
         }
     ]
 }
