@@ -1,0 +1,22 @@
+services:
+  pocket-id:
+    image: pocketid/pocket-id:v2 # or ghcr.io/pocket-id/pocket-id:v2
+    restart: unless-stopped
+    environment:
+      APP_URL: ${APP_URL:-http://localhost:1411}
+      ENCRYPTION_KEY: ${ENCRYPTION_KEY:?required}
+      VERSION_CHECK_DISABLED: ${VERSION_CHECK_DISABLED:-false}
+      ANALYTICS_DISABLED: ${ANALYTICS_DISABLED:-true}
+    ports:
+      - ${COMPOSE_SERVICE_PORT:-1411}:1411
+    volumes:
+      - data:/app/data
+    healthcheck:
+      test: [ "CMD", "/app/pocket-id", "healthcheck" ]
+      interval: 1m30s
+      timeout: 5s
+      retries: 2
+      start_period: 10s
+
+volumes:
+  data:

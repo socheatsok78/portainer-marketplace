@@ -1,0 +1,62 @@
+{
+    "type": 3,
+    "title": "Pocket ID",
+    "name": "pocket-id",
+    "description": "Pocket ID is an easy-to-use OpenID Connect Certified™ and OAuth 2.0 provider that lets users sign in to your applications with passkeys.",
+    "categories": [
+        "edge"
+    ],
+    "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/pocker-id/logo.svg",
+    "platform": "linux",
+    "repository": {
+        "url": "https://github.com/socheatsok78/portainer-marketplace",
+        "stackfile": "templates/pocker-id/compose.yml"
+    },
+    "env": [
+        {
+            "name": "COMPOSE_SERVICE_PORT",
+            "label": "Published Port",
+            "default": "1411"
+        },
+        {
+            "name": "APP_URL",
+            "label": "Pocket ID API URL",
+            "default": "http://localhost:1411"
+        },
+        {
+            "name": "ENCRYPTION_KEY",
+            "label": "Encryption Key",
+            "default": "$ openssl rand -base64 32"
+        },
+        {
+            "name": "VERSION_CHECK_DISABLED",
+            "label": "Disable Version Check",
+            "select": [
+                {
+                    "text": "Enabled",
+                    "value": "false",
+                    "default": true
+                },
+                {
+                    "text": "Disabled",
+                    "value": "true"
+                }
+            ]
+        },
+        {
+            "name": "ANALYTICS_DISABLED",
+            "label": "Disable Analytics",
+            "select": [
+                {
+                    "text": "Enabled",
+                    "value": "false"
+                },
+                {
+                    "text": "Disabled",
+                    "value": "true",
+                    "default": true
+                }
+            ]
+        }
+    ]
+}
