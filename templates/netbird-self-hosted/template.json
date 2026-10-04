@@ -8,7 +8,7 @@
         "infrastructure",
         "networking"
     ],
-    "logo": "https://socheatsok78.github.io/portainer-marketplace/netbird-self-hosted/netbird/logo.svg",
+    "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/netbird-self-hosted/logo.svg",
     "platform": "linux",
     "repository": {
         "url": "https://github.com/socheatsok78/portainer-marketplace",
