@@ -150,6 +150,7 @@ services:
   # NetBird Provisioner - manages proxy registration and configuration
   provisioner:
     <<: *provisioner
+    container_name: netbird-provisioner
     restart: no
     environment:
       COMPOSE_PROJECT_NAME: ${COMPOSE_PROJECT_NAME}
