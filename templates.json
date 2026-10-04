@@ -4,6 +4,45 @@
     {
       "type": 3,
       "administrator_only": true,
+      "title": "NetBird",
+      "name": "netbird",
+      "description": "NetBird Self-Hosted for Portainer",
+      "categories": [
+        "infrastructure",
+        "networking"
+      ],
+      "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/netbird/logo.svg",
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/socheatsok78/portainer-marketplace",
+        "stackfile": "templates/netbird/compose.yml"
+      },
+      "env": [
+        {
+          "name": "NB_PROXY_DOMAIN",
+          "label": "NetBird FQDN domain",
+          "default": "netbird.example.com"
+        },
+        {
+          "name": "NB_AUTH_SECRET",
+          "label": "NetBird Auth Secret",
+          "default": "$ openssl rand -base64 32 | sed 's/=//g'"
+        },
+        {
+          "name": "NB_SESSION_ENCRYPTION_KEY",
+          "label": "NetBird Session Encryption Key",
+          "default": "$ openssl rand -base64 32"
+        },
+        {
+          "name": "NB_STORE_ENCRYPTION_KEY",
+          "label": "NetBird Store Encryption Key",
+          "default": "$ openssl rand -base64 32"
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "administrator_only": true,
       "title": "Pangolin Site",
       "name": "pangolin-site",
       "description": "Pangolin Site for Portainer",
