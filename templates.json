@@ -47,7 +47,7 @@
       "platform": "linux",
       "repository": {
         "url": "https://github.com/socheatsok78/portainer-marketplace",
-        "stackfile": "netbird/netbird/compose.yml"
+        "stackfile": "templates/netbird/compose.yml"
       },
       "env": [
         {
