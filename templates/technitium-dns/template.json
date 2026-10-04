@@ -1,0 +1,44 @@
+{
+    "type": 3,
+    "title": "Technitium DNS Server",
+    "name": "technitium-dns",
+    "description": "Self host a DNS server for privacy & security",
+    "categories": [
+        "dns",
+        "networking",
+        "open-source"
+    ],
+    "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/technitium-dns/logo.png",
+    "platform": "linux",
+    "repository": {
+        "url": "https://github.com/socheatsok78/portainer-marketplace",
+        "stackfile": "templates/technitium-dns/compose.yml"
+    },
+    "env": [
+        {
+            "name": "COMPOSE_IMAGE_TECHNITIUM",
+            "label": "Technitium DNS Server image",
+            "default": "technitium/dns-server:latest"
+        },
+        {
+            "name": "COMPOSE_PORT_DNS_WEB_CONSOLE",
+            "label": "DNS web console",
+            "default": "5380"
+        },
+        {
+            "name": "COMPOSE_PORT_DNS_PORT",
+            "label": "DNS port",
+            "default": "53"
+        },
+        {
+            "name": "DNS_SERVER_DOMAIN",
+            "label": "DNS FQDN domain",
+            "default": "dns-server"
+        },
+        {
+            "name": "DNS_SERVER_ADMIN_PASSWORD",
+            "label": "DNS web console admin password",
+            "default": "technitium-admin"
+        }
+    ]
+}
