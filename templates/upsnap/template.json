@@ -1,6 +1,7 @@
 {
     "type": 3,
     "title": "UpSnap",
+    "name": "upsnap",
     "description": "A simple wake on lan web app written with SvelteKit, Go and PocketBase.",
     "categories": [
         "networking",
