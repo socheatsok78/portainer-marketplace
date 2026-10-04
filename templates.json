@@ -6,11 +6,11 @@
       "administrator_only": true,
       "title": "NetBird Peer",
       "name": "netbird",
-      "description": "NetBird for Portainer",
+      "description": "NetBird Peer for Portainer",
       "categories": [
         "edge"
       ],
-      "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/netbird-peer/logo.svg",
+      "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/netbird/logo.svg",
       "platform": "linux",
       "repository": {
         "url": "https://github.com/socheatsok78/portainer-marketplace",
