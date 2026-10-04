@@ -244,6 +244,70 @@
           "default": "127.0.0.1:4822"
         }
       ]
+    },
+    {
+      "type": 3,
+      "title": "UpSnap",
+      "description": "A simple wake on lan web app written with SvelteKit, Go and PocketBase.",
+      "categories": [
+        "networking",
+        "utility"
+      ],
+      "platform": "linux",
+      "logo": "https://github.com/seriousm4x/UpSnap/raw/master/frontend/static/gopher.svg",
+      "repository": {
+        "url": "https://github.com/socheatsok78/portainer-marketplace",
+        "stackfile": "templates/upsnap/compose.yml"
+      },
+      "env": [
+        {
+          "name": "UPSNAP_HTTP_LISTEN",
+          "label": "HTTP Listen Address",
+          "default": ":8090"
+        },
+        {
+          "name": "UPSNAP_INTERVAL",
+          "label": "Ping Interval",
+          "default": "*/10 * * * * *"
+        },
+        {
+          "name": "UPSNAP_SCAN_RANGE",
+          "label": "Network Scan Range",
+          "default": "192.168.1.0/24"
+        },
+        {
+          "name": "UPSNAP_SCAN_TIMEOUT",
+          "label": "Network Scan Timeout",
+          "default": "500ms"
+        },
+        {
+          "name": "UPSNAP_LOG_LEVEL",
+          "label": "Log Level",
+          "select": [
+            {
+              "text": "DEBUG",
+              "value": "DEBUG"
+            },
+            {
+              "text": "INFO",
+              "value": "INFO",
+              "default": true
+            },
+            {
+              "text": "WARN",
+              "value": "WARN"
+            },
+            {
+              "text": "ERROR",
+              "value": "ERROR"
+            },
+            {
+              "text": "OFF",
+              "value": "OFF"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
