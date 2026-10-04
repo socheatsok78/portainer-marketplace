@@ -192,6 +192,8 @@ services:
       NB_PROXY_ACME_CERTIFICATES: true
       NB_PROXY_ACME_CHALLENGE_TYPE: tls-alpn-01
       NB_PROXY_FORWARDED_PROTO: https
+      # Enable NetBird-Only Access
+      NB_PROXY_PRIVATE: true
       # Enable PROXY protocol to preserve client IPs through L4 proxies (Traefik TCP passthrough)
       NB_PROXY_PROXY_PROTOCOL: true
       # Trust Traefik's IP for PROXY protocol headers
