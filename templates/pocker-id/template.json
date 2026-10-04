@@ -29,8 +29,27 @@
             "default": "$ openssl rand -base64 32"
         },
         {
+            "name": "TRUST_PROXY",
+            "label": "Trust Proxy",
+            "select": [
+                {
+                    "text": "Enabled",
+                    "value": "true",
+                    "default": true
+                },
+                {
+                    "text": "Disabled",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "name": "MAXMIND_LICENSE_KEY",
+            "label": "MaxMind License Key"
+        },
+        {
             "name": "VERSION_CHECK_DISABLED",
-            "label": "Disable Version Check",
+            "label": "Version Check",
             "select": [
                 {
                     "text": "Enabled",
@@ -45,7 +64,7 @@
         },
         {
             "name": "ANALYTICS_DISABLED",
-            "label": "Disable Analytics",
+            "label": "Analytics",
             "select": [
                 {
                     "text": "Enabled",
