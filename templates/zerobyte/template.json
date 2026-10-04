@@ -1,0 +1,38 @@
+{
+    "type": 3,
+    "title": "Zerobyte",
+    "name": "zerobyte",
+    "description": "Powerful backup automation for your remote storage, encrypt, compress, and protect your data with ease",
+    "categories": [
+        "backup",
+        "storage"
+    ],
+    "logo": "https://zerobyte.app/zerobyte.png",
+    "platform": "linux",
+    "repository": {
+        "url": "https://github.com/socheatsok78/portainer-marketplace",
+        "stackfile": "templates/zerobyte/compose.yml"
+    },
+    "env": [
+        {
+            "name": "COMPOSE_SERVICE_PORT",
+            "label": "Published Port",
+            "default": "4096"
+        },
+        {
+            "name": "BASE_URL",
+            "label": "Zerobyte Base URL",
+            "default": "http://localhost:4096"
+        },
+        {
+            "name": "APP_SECRET",
+            "label": "Zerobyte Secret",
+            "default": "$ openssl rand -hex 32"
+        },
+        {
+            "name": "TZ",
+            "label": "Timezone",
+            "default": "UTC"
+        }
+    ]
+}
