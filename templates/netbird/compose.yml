@@ -152,10 +152,9 @@ services:
     <<: *provisioner
     restart: no
     environment:
+      COMPOSE_PROJECT_NAME: ${COMPOSE_PROJECT_NAME}
       NB_PROXY_CROWDSEC_API_URL: http://crowdsec:8080
-    working_dir: ${PWD}
     volumes:
-      - ${PWD}:${PWD}:ro
       - /var/run/docker.sock:/var/run/docker.sock
       - provisioning-configs:/provisioning-configs
     depends_on:
