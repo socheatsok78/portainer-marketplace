@@ -264,7 +264,7 @@
         {
           "name": "UPSNAP_HTTP_LISTEN",
           "label": "HTTP Listen Address",
-          "default": ":8090"
+          "default": "0.0.0.0:8090"
         },
         {
           "name": "UPSNAP_INTERVAL",
