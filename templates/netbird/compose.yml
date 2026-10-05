@@ -162,6 +162,11 @@ services:
     depends_on:
       netbird-server:
         condition: service_started
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "2"
 
   # NetBird Proxy - exposes internal resources to the internet
   proxy:
