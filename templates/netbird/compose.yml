@@ -15,11 +15,6 @@ x-proxy: &proxy
   # image: netbirdio/reverse-proxy:latest
   image: ghcr.io/socheatsok78/netbirdio-reverse-proxy:latest
 
-  # NetBird-Only Access failed because connections back to the host's public IP time out due to Hairpin NAT / Loopback blocking.
-  # https://github.com/netbirdio/netbird/issues/5404#issuecomment-5239752571
-  extra_hosts:
-    - "${NB_PROXY_DOMAIN:?required}:172.30.0.10"
-
 x-crowdsec: &crowdsec
   image: crowdsecurity/crowdsec:v1.7.7
 
@@ -210,6 +205,12 @@ services:
     volumes:
       - netbird_proxy_certs:/certs
       - provisioning-configs:/provisioning-configs:ro
+
+    # NetBird-Only Access failed because connections back to the host's public IP time out due to Hairpin NAT / Loopback blocking.
+    # https://github.com/netbirdio/netbird/issues/5404#issuecomment-5239752571
+    extra_hosts:
+      - "${NB_PROXY_DOMAIN:?required}:172.30.0.10"
+
     labels:
       # TCP passthrough for any unmatched domain (proxy handles its own TLS)
       - traefik.enable=true
