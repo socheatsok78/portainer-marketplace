@@ -55,7 +55,8 @@ services:
       - "--serverstransport.forwardingtimeouts.idleconntimeout=0s"
       - "--providers.file.filename=/etc/traefik/dynamic.yaml"
     ports:
-      - '443:443'
+      - '443:443/tcp'
+      - '443:443/udp'
       - '80:80'
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
