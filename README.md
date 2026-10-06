@@ -11,7 +11,7 @@ https://socheatsok78.github.io/portainer-marketplace/templates.json
 | Name | Description |
 | ---- | ----------- |
 | NetBird | NetBird is an Open Source Zero Trust Networking platform that allows you to create secure private networks for your organization or home. |
-| NetBird Peer | NetBird Peer for Portainer |
+| NetBird Client | NetBird Client for Portainer |
 | Pangolin Site | Pangolin Site for Portainer |
 | Pocket ID | Pocket ID is an easy-to-use OpenID Connect Certified™ and OAuth 2.0 provider that lets users sign in to your applications with passkeys. |
 | PostgreSQL | The most advanced open-source database |

@@ -4,9 +4,8 @@
     {
       "type": 3,
       "administrator_only": true,
-      "title": "NetBird Peer",
-      "name": "netbird",
-      "description": "NetBird Peer for Portainer",
+      "title": "NetBird Client",
+      "description": "NetBird Client for Portainer",
       "categories": [
         "edge"
       ],
@@ -14,7 +13,7 @@
       "platform": "linux",
       "repository": {
         "url": "https://github.com/socheatsok78/portainer-marketplace",
-        "stackfile": "templates/netbird-peer/compose.yml"
+        "stackfile": "templates/netbird-client/compose.yml"
       },
       "env": [
         {
