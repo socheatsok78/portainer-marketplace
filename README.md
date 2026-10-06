@@ -10,6 +10,7 @@ https://socheatsok78.github.io/portainer-marketplace/templates.json
 
 | Name | Description |
 | ---- | ----------- |
+| n8n | The Platform for AI Agents and Workflow Automation |
 | NetBird | NetBird is an Open Source Zero Trust Networking platform that allows you to create secure private networks for your organization or home. |
 | NetBird Client | NetBird Client for Portainer |
 | NetBird Reverse Proxy | NetBird Reverse Proxy for Portainer |

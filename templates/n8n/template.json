@@ -1,0 +1,49 @@
+{
+    "type": 3,
+    "title": "n8n",
+    "name": "n8n",
+    "description": "The Platform for AI Agents and Workflow Automation",
+    "categories": [
+        "automation",
+        "workflow",
+        "ai"
+    ],
+    "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/n8n/logo.png",
+    "platform": "linux",
+    "repository": {
+        "url": "https://github.com/socheatsok78/portainer-marketplace",
+        "stackfile": "templates/n8n/compose.yml"
+    },
+    "env": [
+        {
+            "name": "N8N_RUNNERS_AUTH_TOKEN",
+            "label": "N8N_RUNNERS_AUTH_TOKEN",
+            "description": "Shared secret used to authenticate runner processes with the broker.",
+            "default": "$ openssl rand -hex 24"
+        },
+        {
+            "name": "SANDBOX_API_KEYS",
+            "label": "SANDBOX_API_KEYS",
+            "description": "Comma-separated admin API keys. Full access to all sandboxes and `/admin/tenants` key management.",
+            "default": "$ openssl rand -hex 24"
+        },
+        {
+            "name": "SANDBOX_API_RUNNER_API_KEY",
+            "label": "SANDBOX_API_RUNNER_API_KEY",
+            "description": "API key injected by the API when calling runner HTTP",
+            "default": "$ openssl rand -hex 24"
+        },
+        {
+            "name": "SANDBOX_API_RUNNER_REGISTRATION_TOKEN",
+            "label": "SANDBOX_API_RUNNER_REGISTRATION_TOKEN",
+            "description": "Shared secret; runners authenticate to the private gRPC registration service",
+            "default": "$ openssl rand -hex 24"
+        },
+        {
+            "name": "SEARXNG_SECRET",
+            "label": "SEARXNG_SECRET",
+            "description": "Web search: secret for the bundled SearXNG instance",
+            "default": "$ openssl rand -hex 24"
+        }
+    ]
+}
