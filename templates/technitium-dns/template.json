@@ -5,8 +5,7 @@
     "description": "Self host a DNS server for privacy & security",
     "categories": [
         "dns",
-        "networking",
-        "open-source"
+        "networking"
     ],
     "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/technitium-dns/logo.png",
     "platform": "linux",

@@ -4,8 +4,8 @@
     "name": "rustfs",
     "description": "RustFS is a high-performance, distributed object storage system built in Rust",
     "categories": [
-        "storage",
-        "open-source"
+        "object-storage",
+        "storage"
     ],
     "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/rustfs/logo.png",
     "platform": "linux",

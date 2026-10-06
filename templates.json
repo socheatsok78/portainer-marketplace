@@ -57,7 +57,6 @@
       "description": "NetBird Client for Portainer",
       "categories": [
         "edge",
-        "infrastructure",
         "netbird",
         "networking"
       ],
@@ -91,7 +90,6 @@
       "description": "NetBird Reverse Proxy for Portainer",
       "categories": [
         "edge",
-        "infrastructure",
         "netbird",
         "networking"
       ],
@@ -241,7 +239,8 @@
       "name": "pocket-id",
       "description": "Pocket ID is an easy-to-use OpenID Connect Certified™ and OAuth 2.0 provider that lets users sign in to your applications with passkeys.",
       "categories": [
-        "edge"
+        "identity",
+        "security"
       ],
       "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/pocker-id/logo.svg",
       "platform": "linux",
@@ -407,8 +406,8 @@
       "name": "rustfs",
       "description": "RustFS is a high-performance, distributed object storage system built in Rust",
       "categories": [
-        "storage",
-        "open-source"
+        "object-storage",
+        "storage"
       ],
       "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/rustfs/logo.png",
       "platform": "linux",
@@ -493,8 +492,7 @@
       "description": "Self host a DNS server for privacy & security",
       "categories": [
         "dns",
-        "networking",
-        "open-source"
+        "networking"
       ],
       "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/technitium-dns/logo.png",
       "platform": "linux",

@@ -5,7 +5,6 @@
     "description": "NetBird Reverse Proxy for Portainer",
     "categories": [
         "edge",
-        "infrastructure",
         "netbird",
         "networking"
     ],
