@@ -55,7 +55,7 @@
       "env": [
         {
           "name": "NB_PROXY_MANAGEMENT_ADDRESS",
-          "label": "NetBird Proxy Management Address",
+          "label": "NetBird Management URL",
           "default": "https://api.netbird.io"
         },
         {
@@ -71,11 +71,11 @@
           "label": "NetBird-Only Access",
           "select": [
             {
-              "label": "Enable",
+              "text": "Enable",
               "value": "true"
             },
             {
-              "label": "Disable",
+              "text": "Disable",
               "value": "false"
             }
           ]
@@ -85,16 +85,16 @@
           "label": "Log Level",
           "select": [
             {
-              "label": "Info",
+              "text": "Info",
               "value": "info",
               "default": true
             },
             {
-              "label": "Debug",
+              "text": "Debug",
               "value": "debug"
             },
             {
-              "label": "Trace",
+              "text": "Trace",
               "value": "trace"
             }
           ]
