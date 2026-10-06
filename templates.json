@@ -170,8 +170,7 @@
       "env": [
         {
           "name": "NB_PROXY_DOMAIN",
-          "label": "NetBird FQDN domain",
-          "default": "netbird.example.com"
+          "label": "NetBird FQDN domain"
         },
         {
           "name": "NB_AUTH_SECRET",
