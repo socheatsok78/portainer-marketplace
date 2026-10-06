@@ -4,7 +4,10 @@
     "title": "NetBird Client",
     "description": "NetBird Client for Portainer",
     "categories": [
-        "edge"
+        "edge",
+        "infrastructure",
+        "netbird",
+        "networking"
     ],
     "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/netbird/logo.svg",
     "platform": "linux",
@@ -14,6 +17,11 @@
     },
     "env": [
         {
+            "name": "NB_MANAGEMENT_URL",
+            "label": "NetBird Management URL",
+            "default": "https://api.netbird.io"
+        },
+        {
             "name": "NB_HOSTNAME",
             "label": "NetBird Hostname",
             "default": ""
@@ -21,11 +29,6 @@
         {
             "name": "NB_SETUP_KEY",
             "label": "NetBird Setup Key"
-        },
-        {
-            "name": "NB_MANAGEMENT_URL",
-            "label": "NetBird Management URL",
-            "default": "https://api.netbird.io:443"
         }
     ]
 }
