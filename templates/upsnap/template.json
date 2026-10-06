@@ -8,7 +8,7 @@
         "utility"
     ],
     "platform": "linux",
-    "logo": "https://github.com/seriousm4x/UpSnap/raw/master/frontend/static/gopher.svg",
+    "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/upsnap/logo.png",
     "repository": {
         "url": "https://github.com/socheatsok78/portainer-marketplace",
         "stackfile": "templates/upsnap/compose.yml"

@@ -9,7 +9,7 @@
         "networking",
         "proxy"
     ],
-    "logo": "https://doc.traefik.io/traefik/assets/img/traefik.logo.png",
+    "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/traefik/logo.png",
     "platform": "linux",
     "repository": {
         "url": "https://github.com/socheatsok78/portainer-marketplace",

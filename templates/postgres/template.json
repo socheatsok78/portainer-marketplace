@@ -8,7 +8,7 @@
         "database"
     ],
     "platform": "linux",
-    "logo": "https://www.postgresql.org/media/img/about/press/elephant.png",
+    "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/postgres/logo.png",
     "image": "postgres:latest",
     "env": [
         {

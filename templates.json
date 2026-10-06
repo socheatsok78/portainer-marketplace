@@ -199,7 +199,7 @@
       "categories": [
         "edge"
       ],
-      "logo": "https://docs.pangolin.net/icon0.svg",
+      "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/pangolin-site/logo.svg",
       "platform": "linux",
       "repository": {
         "url": "https://github.com/socheatsok78/portainer-marketplace",
@@ -327,7 +327,7 @@
         "database"
       ],
       "platform": "linux",
-      "logo": "https://www.postgresql.org/media/img/about/press/elephant.png",
+      "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/postgres/logo.png",
       "image": "postgres:latest",
       "env": [
         {
@@ -411,7 +411,7 @@
         "storage",
         "open-source"
       ],
-      "logo": "https://rustfs.com/apple-touch-icon.png",
+      "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/rustfs/logo.png",
       "platform": "linux",
       "repository": {
         "url": "https://github.com/socheatsok78/portainer-marketplace",
@@ -540,7 +540,7 @@
       "categories": [
         "management"
       ],
-      "logo": "https://termix.site/img/logo.svg",
+      "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/termix/logo.svg",
       "platform": "linux",
       "repository": {
         "url": "https://github.com/socheatsok78/portainer-marketplace",
@@ -570,7 +570,7 @@
         "networking",
         "proxy"
       ],
-      "logo": "https://doc.traefik.io/traefik/assets/img/traefik.logo.png",
+      "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/traefik/logo.png",
       "platform": "linux",
       "repository": {
         "url": "https://github.com/socheatsok78/portainer-marketplace",
@@ -609,7 +609,7 @@
         "utility"
       ],
       "platform": "linux",
-      "logo": "https://github.com/seriousm4x/UpSnap/raw/master/frontend/static/gopher.svg",
+      "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/upsnap/logo.png",
       "repository": {
         "url": "https://github.com/socheatsok78/portainer-marketplace",
         "stackfile": "templates/upsnap/compose.yml"
@@ -673,7 +673,7 @@
         "backup",
         "storage"
       ],
-      "logo": "https://zerobyte.app/zerobyte.png",
+      "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/zerobyte/logo.png",
       "platform": "linux",
       "repository": {
         "url": "https://github.com/socheatsok78/portainer-marketplace",
