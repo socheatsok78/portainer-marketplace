@@ -38,6 +38,72 @@
     {
       "type": 3,
       "administrator_only": true,
+      "title": "NetBird Reverse Proxy",
+      "description": "NetBird Reverse Proxy for Portainer",
+      "categories": [
+        "edge",
+        "infrastructure",
+        "netbird",
+        "networking"
+      ],
+      "logo": "https://socheatsok78.github.io/portainer-marketplace/templates/netbird/logo.svg",
+      "platform": "linux",
+      "repository": {
+        "url": "https://github.com/socheatsok78/portainer-marketplace",
+        "stackfile": "templates/netbird-reverse-proxy/compose.yml"
+      },
+      "env": [
+        {
+          "name": "NB_PROXY_MANAGEMENT_ADDRESS",
+          "label": "NetBird Proxy Management Address",
+          "default": "https://api.netbird.io"
+        },
+        {
+          "name": "NB_PROXY_DOMAIN",
+          "label": "NetBird Proxy Domain"
+        },
+        {
+          "name": "NB_PROXY_TOKEN",
+          "label": "NetBird Proxy Token"
+        },
+        {
+          "name": "NB_PROXY_PRIVATE",
+          "label": "NetBird-Only Access",
+          "select": [
+            {
+              "label": "Enable",
+              "value": "true"
+            },
+            {
+              "label": "Disable",
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "name": "NB_PROXY_LOG_LEVEL",
+          "label": "Log Level",
+          "select": [
+            {
+              "label": "Info",
+              "value": "info",
+              "default": true
+            },
+            {
+              "label": "Debug",
+              "value": "debug"
+            },
+            {
+              "label": "Trace",
+              "value": "trace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "administrator_only": true,
       "title": "NetBird",
       "name": "netbird",
       "description": "NetBird is an Open Source Zero Trust Networking platform that allows you to create secure private networks for your organization or home.",
