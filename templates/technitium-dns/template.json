@@ -15,9 +15,9 @@
     },
     "env": [
         {
-            "name": "COMPOSE_IMAGE_TECHNITIUM",
-            "label": "Technitium DNS Server image",
-            "default": "technitium/dns-server:latest"
+            "name": "COMPOSE_IMAGE_TECHNITIUM_VERSION",
+            "label": "Technitium DNS Server version",
+            "default": "latest"
         },
         {
             "name": "COMPOSE_PORT_DNS_WEB_CONSOLE",

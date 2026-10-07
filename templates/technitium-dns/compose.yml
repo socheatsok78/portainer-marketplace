@@ -2,7 +2,7 @@ services:
   dns-server:
     container_name: dns-server
     hostname: dns-server
-    image: "${COMPOSE_IMAGE_TECHNITIUM:-technitium/dns-server:latest}"
+    image: "technitium/dns-server:${COMPOSE_IMAGE_TECHNITIUM_VERSION:-latest}"
     # For DHCP deployments, use "host" network mode and remove all the port mappings, including the ports array by commenting them
     # network_mode: "host"
     ports:
