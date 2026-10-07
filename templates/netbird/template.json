@@ -21,6 +21,10 @@
             "label": "NetBird FQDN domain"
         },
         {
+            "name": "NB_TRAEFIK_ACME_EMAIL",
+            "label": "NetBird Traefik ACME Email"
+        },
+        {
             "name": "NB_AUTH_SECRET",
             "label": "NetBird Auth Secret",
             "default": "$ openssl rand -base64 32 | sed 's/=//g'"

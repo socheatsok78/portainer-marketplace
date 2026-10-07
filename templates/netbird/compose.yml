@@ -47,7 +47,7 @@ services:
       - "--entrypoints.web.http.redirections.entrypoint.to=websecure"
       - "--entrypoints.web.http.redirections.entrypoint.scheme=https"
       # Let's Encrypt ACME
-      - "--certificatesresolvers.letsencrypt.acme.email=acme@${NB_PROXY_DOMAIN:?required}"
+      - "--certificatesresolvers.letsencrypt.acme.email=${NB_TRAEFIK_ACME_EMAIL:?required}"
       - "--certificatesresolvers.letsencrypt.acme.storage=/letsencrypt/acme.json"
       - "--certificatesresolvers.letsencrypt.acme.tlschallenge=true"
       # gRPC transport settings
