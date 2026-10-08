@@ -16,6 +16,7 @@ services:
   sandbox-api-init:
     image: ghcr.io/n8n-io/n8n-sandbox-service-api:${N8N_SANDBOX_VERSION:-1.6.0}
     container_name: n8n-sandbox-api-init
+    restart: no
     user: '0:0'
     entrypoint: ['sh', '-c']
     command:
@@ -33,6 +34,7 @@ services:
   sandbox-api:
     image: ghcr.io/n8n-io/n8n-sandbox-service-api:${N8N_SANDBOX_VERSION:-1.6.0}
     container_name: n8n-sandbox-api
+    restart: unless-stopped
     depends_on:
       sandbox-api-init:
         condition: service_completed_successfully
@@ -61,6 +63,7 @@ services:
   sandbox-runner-1:
     image: ghcr.io/n8n-io/n8n-sandbox-service-runner-dind:${N8N_SANDBOX_VERSION:-1.6.0}
     container_name: n8n-sandbox-runner-1
+    restart: unless-stopped
     privileged: true
     depends_on:
       sandbox-api:
@@ -87,6 +90,7 @@ services:
   n8n:
     image: docker.io/n8nio/n8n:${N8N_VERSION:-2.43.0}
     container_name: n8n
+    restart: unless-stopped
     depends_on:
       sandbox-api:
         condition: service_healthy
@@ -107,6 +111,7 @@ services:
   runners:
     image: ghcr.io/n8n-io/runners:${N8N_VERSION:-2.43.0}
     container_name: n8n-runners
+    restart: unless-stopped
     depends_on:
       n8n:
         condition: service_started
@@ -120,6 +125,7 @@ services:
   searxng:
     image: ghcr.io/searxng/searxng:latest
     container_name: n8n-searxng
+    restart: unless-stopped
     environment:
       SEARXNG_SECRET: ${SEARXNG_SECRET:?required}
     configs:
