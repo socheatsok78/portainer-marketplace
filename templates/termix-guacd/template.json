@@ -1,7 +1,7 @@
 {
     "type": 3,
     "administrator_only": true,
-    "title": "Termix",
+    "title": "Termix with guacd",
     "name": "termix",
     "description": "Self-hosted server management, from SSH and remote desktop to automations",
     "categories": [

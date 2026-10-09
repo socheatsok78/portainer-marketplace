@@ -21,7 +21,8 @@ https://socheatsok78.github.io/portainer-marketplace/templates.json
 | Registry (cache) | Docker image registry configured as a DockerHub pull through cache |
 | RustFS | RustFS is a high-performance, distributed object storage system built in Rust |
 | Technitium DNS Server | Self host a DNS server for privacy & security |
-| Termix | Self-hosted SSH and remote desktop management. |
+| Termix | Self-hosted server management, from SSH and remote desktop to automations |
+| Termix with guacd | Self-hosted server management, from SSH and remote desktop to automations |
 | Traefik | A modern reverse proxy and load balancer for HTTP and TCP services. |
 | UpSnap | A simple wake on lan web app written with SvelteKit, Go and PocketBase. |
 | Zerobyte | Powerful backup automation for your remote storage, encrypt, compress, and protect your data with ease |
